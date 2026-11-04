@@ -15,7 +15,14 @@ tuned or chosen with its labels or its video. From the match we take its inputs 
   possession at the first touch of the other team. We rebuilt our open labels to that convention for choosing and
   scoring ([§3](#3-training-data));
 - **after writing the file,** the pipeline check on the public window that the rules allow, which prints only pass
-  or fail.
+  or fail. Once the file was final, it was also scored on this window with the official scorer
+  (`run_evaluation.py`), as a check of the pipeline, as [EVALUATION.md] asks. It chose nothing, and nothing changed
+  after it.
+
+**Claude, an AI assistant.** The code and this document were written with Claude (Anthropic), through Claude Code,
+under the team's direction. The pipeline itself uses no LLM. The match's data never left our machines, and Claude
+never received them or any extract of them: everything that ran on them, a team member ran locally, and a hook in
+Claude Code blocked its access to the encrypted volume that held them.
 
 ## 1. The approach
 
@@ -97,7 +104,8 @@ and the Smart Tagging, and runs nine stages on every scored half, separately (Fi
    - **each tagged phase that names the team on the ball** (Build Up, Progression, Creating Chances, Ball in Final
      Third, Ball in the Box and Attacking Transition, [DATA.md]) takes 1 per frame from the other team and 1 from D,
      on every frame inside it. Where phases of both teams overlap, nothing is taken. The defensive phases are not
-     used: they do not say which team has the ball;
+     used. They name the team that defends. On the bench, flipped to the team on the ball and added to the attacking
+     phases, they gained at most +0.006, short of the +0.04 we required (`model-girat-defenses.md`);
    - **D is ruled out** where stage 1 removed the ball: a frame the tracking got wrong is not evidence of a stoppage.
 
    The set pieces' own team is not used: on the bench, adding to the team after a restart did not help.
@@ -248,7 +256,7 @@ ATD, and its Smart Tagging is simulated.
 | Tactical video | **One check, not used by the model; and the convention** | Whether the ATD ball is in sync with it (below). The public window's truth was looked at with it, to see where possession changes (below). Before that, its frame count, its frame rate and a few captures |
 | Tactical homography | **For that check only** | It puts the ATD ball on the video frame. Before that, how many frames have a valid one |
 | Broadcast ATD, video and homography | Inspected, not used | Not synchronised with the tactical timeline |
-| Public 5-minute window | **The convention, and a check of the pipeline** | Its truth, looked at with the tactical video, changes possession at the first touch of the other team, rebounds included. We rebuilt our open labels to that convention for choosing and scoring (§3); nothing else was taken from it. After writing the file, the command checks that H and A are not swapped, and that the file is not offset by seconds. It prints only whether each check passed, and never changes a label or a setting. During the inspection, the official code's four baselines were also rerun on our copy of the bundle and scored on this window. They came out identical to the published ones, so our copy is the organisers' |
+| Public 5-minute window | **The convention, and a check of the pipeline** | Its truth, looked at with the tactical video, changes possession at the first touch of the other team, rebounds included. We rebuilt our open labels to that convention for choosing and scoring (§3); nothing else was taken from it. After writing the file, the command checks that H and A are not swapped, and that the file is not offset by seconds. It prints only whether each check passed, and never changes a label or a setting. During the inspection, the official code's four baselines were also rerun on our copy of the bundle and scored on this window. They came out identical to the published ones, so our copy is the organisers'. Once the file was final, it was also scored on this window with the official scorer (`run_evaluation.py`), as a check of the pipeline, as [EVALUATION.md] asks. It chose nothing, and nothing changed after it |
 | `validate_submission.py` | Yes | Run on every file the command writes |
 | `possession_metrics.py` | Yes | Unchanged, on the open bench, for every score in this document |
 
@@ -439,8 +447,9 @@ else. A step that improves without passing becomes the base of the next one only
   (`model-dos-segons.md`); moving each decoded change to where the change is likeliest (`model-vores.md`); the set
   pieces as signals of the second classifier (`model-pilotes-aturades.md`), and adding to the restart's team too
   (`model-etiquetes-decodificador.md`); a classifier around the restarts (`model-represes.md`); a detector of the
-  other team's possessions swallowed inside a predicted one (`model-engolides.md`); and a wider grid for the phases
-  (`model-fases-amplia.md`). PFF FC's FIFA World Cup 2022 tracking looked like SkillCorner's where SkillCorner had
+  other team's possessions swallowed inside a predicted one (`model-engolides.md`); a wider grid for the phases
+  (`model-fases-amplia.md`); and the defensive phases, flipped to the team on the ball (`model-girat-defenses.md`).
+  PFF FC's FIFA World Cup 2022 tracking looked like SkillCorner's where SkillCorner had
   failed, so it was never trained on (`pff-al-costat.md`).
 
 ![Figure 3. The open bench. Each match is scored by models trained on the other nine, with the decoder and Smart Tagging settings the other nine choose; the pipeline's model is trained on all ten.](figures/bench.svg)
@@ -526,7 +535,6 @@ the lines:
 1. The ball from the tactical video where the ATD lost it, with a ball detector trained on open data that sees it
    in this video.
 2. Fitting the degradation scenarios to the ATD's own gap statistics, measured locally.
-3. The defensive phases of the Smart Tagging, with a way to tell which team they name.
 
 ## 6. Reproduction
 
