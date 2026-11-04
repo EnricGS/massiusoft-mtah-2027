@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 672 1116" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="pipeline-title pipeline-desc" id="pipeline-root">
+        <title id="pipeline-title">The pipeline that writes the submission</title>
+        <desc id="pipeline-desc">The tactical ATD loses the balls seen far outside the pitch and becomes 152 signals per frame; a first LightGBM classifier gives P(H), P(A) and P(D); 54 signals more describe those probabilities around each frame; five small neural networks read the positions around the ball and both whole teams, averaged over four views; a change model gives q, how likely the team changes; a second classifier gives the final probabilities from 271 signals; the Smart Tagging&#x27;s set pieces add to dead ball and its phases take from the other team; a Viterbi decoder, where switching team costs less where q is high, turns them into whole possessions per half; the file is written and checked.</desc>
+        <defs>
+      <style>#pipeline-root { font-family: 'Avenir Next', system-ui, sans-serif; color: #1c1f1e; }
+      #pipeline-root .diagram-container { width: 100%; overflow-x: auto; }
+      #pipeline-root .diagram-container { overflow-x: visible; }
+      #pipeline-root .nm { font-family: 'Avenir Next', system-ui, sans-serif; font-size: 12px; font-weight: 600; fill: #1c1f1e; }
+      #pipeline-root .dt { font-family: 'Avenir Next', system-ui, sans-serif; font-size: 10px; font-weight: 400; fill: #4b5351; }
+      #pipeline-root .src { font-family: Menlo, ui-monospace, monospace; font-size: 9px; fill: #5f6765; }
+      #pipeline-root .tag { font-family: Menlo, ui-monospace, monospace; font-size: 8.5px; letter-spacing: 0.1em; fill: #5f6765; }
+      #pipeline-root .tag-accent { fill: #bf4520; }</style>
+          <marker id="pipeline-arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#4b5351"/></marker>
+          <marker id="pipeline-arrow-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#bf4520"/></marker>
+        </defs>
+        <rect width="100%" height="100%" fill="#ffffff"/>
+        <!-- Les fletxes primer, i després els nodes -->
+          <path d="M 212 88 L 212 120" fill="none" stroke="#4b5351" stroke-width="1" marker-end="url(#pipeline-arrow)"/>
+          <path d="M 212 204 L 212 236" fill="none" stroke="#4b5351" stroke-width="1" marker-end="url(#pipeline-arrow)"/>
+          <path d="M 212 336 L 212 368" fill="none" stroke="#4b5351" stroke-width="1" marker-end="url(#pipeline-arrow)"/>
+          <path d="M 212 452 L 212 484" fill="none" stroke="#4b5351" stroke-width="1" marker-end="url(#pipeline-arrow)"/>
+          <path d="M 212 568 L 212 600" fill="none" stroke="#4b5351" stroke-width="1" marker-end="url(#pipeline-arrow)"/>
+          <path d="M 212 684 L 212 716" fill="none" stroke="#4b5351" stroke-width="1" marker-end="url(#pipeline-arrow)"/>
+          <path d="M 212 828 L 212 860" fill="none" stroke="#bf4520" stroke-width="1" marker-end="url(#pipeline-arrow-accent)"/>
+          <path d="M 212 960 L 212 992" fill="none" stroke="#4b5351" stroke-width="1" marker-end="url(#pipeline-arrow)"/>
+          <path d="M 400 162 L 540 162 Q 548 162 548 170 L 548 236" fill="none" stroke="#4b5351" stroke-width="1" marker-end="url(#pipeline-arrow)"/>
+          <path d="M 548 420 L 548 634 Q 548 642 540 642 L 400 642" fill="none" stroke="#4b5351" stroke-width="1" marker-end="url(#pipeline-arrow)"/>
+          <path d="M 448 772 L 400 772" fill="none" stroke="#4b5351" stroke-width="1" marker-end="url(#pipeline-arrow)"/>
+          <path d="M 448 910 L 400 910" fill="none" stroke="#bf4520" stroke-width="1" marker-end="url(#pipeline-arrow-accent)"/>
+          <g id="p-atd">
+          <rect x="24" y="16" width="376" height="72" rx="6" fill="#ffffff"/>
+          <rect x="24" y="16" width="376" height="72" rx="6" fill="#4b5351" fill-opacity="0.08" stroke="#5f6765" stroke-width="1"/>
+          <rect x="344" y="28" width="44" height="16" rx="2" fill="none" stroke="#1c1f1e" stroke-opacity="0.16" stroke-width="0.8"/>
+          <text class="tag" x="350" y="39">INPUT</text>
+          <text class="nm" x="36" y="41">Tactical ATD</text>
+          <text class="dt" x="36" y="57">Ball and player positions, one record per video frame</text>
+          <text class="src" x="36" y="75">llegeix.tracking · cadena/__main__.py:123</text>
+          </g>
+          <g id="p-neteja">
+          <rect x="24" y="120" width="376" height="84" rx="6" fill="#ffffff"/>
+          <rect x="24" y="120" width="376" height="84" rx="6" fill="#ffffff" stroke="#1c1f1e" stroke-width="1"/>
+          <rect x="332" y="132" width="56" height="16" rx="2" fill="none" stroke="#1c1f1e" stroke-opacity="0.16" stroke-width="0.8"/>
+          <text class="tag" x="338" y="143">STAGE 1</text>
+          <text class="nm" x="36" y="145">A credible ball</text>
+          <text class="dt" x="36" y="161">A ball seen 10 m or more outside the pitch is a tracking</text>
+          <text class="dt" x="36" y="175">error: it is treated as missing, as in a gap</text>
+          <text class="src" x="36" y="193">prepara · cadena/opcio_girat.py:62-65</text>
+          </g>
+          <g id="p-senyals">
+          <rect x="24" y="236" width="376" height="100" rx="6" fill="#ffffff"/>
+          <rect x="24" y="236" width="376" height="100" rx="6" fill="#ffffff" stroke="#1c1f1e" stroke-width="1"/>
+          <rect x="332" y="248" width="56" height="16" rx="2" fill="none" stroke="#1c1f1e" stroke-opacity="0.16" stroke-width="0.8"/>
+          <text class="tag" x="338" y="259">STAGE 2</text>
+          <text class="nm" x="36" y="261">152 signals per frame</text>
+          <text class="dt" x="36" y="277">105 on the ball, each team&#x27;s block and dead-ball cues;</text>
+          <text class="dt" x="36" y="291">29 on touches and control; 18 on the last contact:</text>
+          <text class="dt" x="36" y="305">which team was nearest the ball within 1 and 2 m</text>
+          <text class="src" x="36" y="323">senyals_del_primer · cadena/opcio_girat.py:72</text>
+          </g>
+          <g id="p-primer">
+          <rect x="24" y="368" width="376" height="84" rx="6" fill="#ffffff"/>
+          <rect x="24" y="368" width="376" height="84" rx="6" fill="#ffffff" stroke="#1c1f1e" stroke-width="1"/>
+          <rect x="332" y="380" width="56" height="16" rx="2" fill="none" stroke="#1c1f1e" stroke-opacity="0.16" stroke-width="0.8"/>
+          <text class="tag" x="338" y="391">STAGE 3</text>
+          <text class="nm" x="36" y="393">First classifier: P(H), P(A), P(D)</text>
+          <text class="dt" x="36" y="409">LightGBM, the average of the frame as is and with the teams</text>
+          <text class="dt" x="36" y="423">swapped. Frames with no ball and no player get the prior</text>
+          <text class="src" x="36" y="441">model.probabilitats · cadena/opcio_girat.py:73-74</text>
+          </g>
+          <g id="p-context">
+          <rect x="24" y="484" width="376" height="84" rx="6" fill="#ffffff"/>
+          <rect x="24" y="484" width="376" height="84" rx="6" fill="#ffffff" stroke="#1c1f1e" stroke-width="1"/>
+          <rect x="332" y="496" width="56" height="16" rx="2" fill="none" stroke="#1c1f1e" stroke-opacity="0.16" stroke-width="0.8"/>
+          <text class="tag" x="338" y="507">STAGE 4</text>
+          <text class="nm" x="36" y="509">54 context signals</text>
+          <text class="dt" x="36" y="525">The first classifier&#x27;s P(H) − P(A) and P(D) around the frame,</text>
+          <text class="dt" x="36" y="539">shifted and averaged up to ±5 s, within each half</text>
+          <text class="src" x="36" y="557">amb_el_context · cadena/opcio_girat.py:75</text>
+          </g>
+          <g id="p-segon">
+          <rect x="24" y="600" width="376" height="84" rx="6" fill="#ffffff"/>
+          <rect x="24" y="600" width="376" height="84" rx="6" fill="#ffffff" stroke="#1c1f1e" stroke-width="1"/>
+          <rect x="332" y="612" width="56" height="16" rx="2" fill="none" stroke="#1c1f1e" stroke-opacity="0.16" stroke-width="0.8"/>
+          <text class="tag" x="338" y="623">STAGE 7</text>
+          <text class="nm" x="36" y="625">Second classifier: P(H), P(A), P(D)</text>
+          <text class="dt" x="36" y="641">LightGBM on 271 signals: these 206, 57 from the networks,</text>
+          <text class="dt" x="36" y="655">and 8 on stoppages: the ball heading out, players braking</text>
+          <text class="src" x="36" y="673">model.probabilitats · cadena/opcio_girat.py:80-82</text>
+          </g>
+          <g id="p-smart">
+          <rect x="24" y="716" width="376" height="112" rx="6" fill="#ffffff"/>
+          <rect x="24" y="716" width="376" height="112" rx="6" fill="#ffffff" stroke="#1c1f1e" stroke-width="1"/>
+          <rect x="332" y="728" width="56" height="16" rx="2" fill="none" stroke="#1c1f1e" stroke-opacity="0.16" stroke-width="0.8"/>
+          <text class="tag" x="338" y="739">STAGE 8</text>
+          <text class="nm" x="36" y="741">The Smart Tagging, as evidence</text>
+          <text class="dt" x="36" y="757">On log(p / prior): each set piece adds 1 per frame to D for</text>
+          <text class="dt" x="36" y="771">1.5 × the median dead ball before that kind of restart; each</text>
+          <text class="dt" x="36" y="785">tagged phase takes 1 per frame from the other team and D;</text>
+          <text class="dt" x="36" y="799">D is ruled out wherever the ball was cleaned away</text>
+          <text class="src" x="36" y="817">relativa · cadena/opcio_girat.py:99-105</text>
+          </g>
+          <g id="p-decodifica">
+          <rect x="24" y="860" width="376" height="100" rx="6" fill="#ffffff"/>
+          <rect x="24" y="860" width="376" height="100" rx="6" fill="#bf4520" fill-opacity="0.07" stroke="#bf4520" stroke-width="1.2"/>
+          <rect x="332" y="872" width="56" height="16" rx="2" fill="none" stroke="#bf4520" stroke-width="0.8"/>
+          <text class="tag tag-accent" x="338" y="883">STAGE 9</text>
+          <text class="nm" x="36" y="885">Viterbi decoder, per half</text>
+          <text class="dt" x="36" y="901">Switching team costs 4 × −ln q; to or from dead ball, 32.</text>
+          <text class="dt" x="36" y="915">Every possession but the first and last of a half lasts</text>
+          <text class="dt" x="36" y="929">12 frames (0.48 s) or more</text>
+          <text class="src" x="36" y="947">decodifica · cadena/opcio_girat.py:108-118</text>
+          </g>
+          <g id="p-csv">
+          <rect x="24" y="992" width="376" height="100" rx="6" fill="#ffffff"/>
+          <rect x="24" y="992" width="376" height="100" rx="6" fill="#ffffff" stroke="#1c1f1e" stroke-width="1"/>
+          <rect x="340" y="1004" width="48" height="16" rx="2" fill="none" stroke="#1c1f1e" stroke-opacity="0.16" stroke-width="0.8"/>
+          <text class="tag" x="346" y="1015">OUTPUT</text>
+          <text class="nm" x="36" y="1017">possession.csv</text>
+          <text class="dt" x="36" y="1033">One label per video frame: H, A or D in the scored halves,</text>
+          <text class="dt" x="36" y="1047">X outside them. Then checked: the format, the last run,</text>
+          <text class="dt" x="36" y="1061">the official validator and the public window</text>
+          <text class="src" x="36" y="1079">fitxer.escriu · cadena/__main__.py:146</text>
+          </g>
+          <g id="p-xarxes">
+          <rect x="448" y="236" width="200" height="184" rx="6" fill="#ffffff"/>
+          <rect x="448" y="236" width="200" height="184" rx="6" fill="#ffffff" stroke="#1c1f1e" stroke-width="1"/>
+          <rect x="580" y="248" width="56" height="16" rx="2" fill="none" stroke="#1c1f1e" stroke-opacity="0.16" stroke-width="0.8"/>
+          <text class="tag" x="586" y="259">STAGE 5</text>
+          <text class="nm" x="460" y="261">Five networks</text>
+          <text class="dt" x="460" y="277">Small neural networks on the</text>
+          <text class="dt" x="460" y="291">ball, estimated in its gaps, the</text>
+          <text class="dt" x="460" y="305">3 nearest players of each team</text>
+          <text class="dt" x="460" y="319">and both whole teams, over ±2 s.</text>
+          <text class="dt" x="460" y="333">Mean of 4 views: as is, teams</text>
+          <text class="dt" x="460" y="347">swapped, pitch flipped, both.</text>
+          <text class="dt" x="460" y="361">Their P(H), P(A), P(D) and its</text>
+          <text class="dt" x="460" y="375">context make 57 signals</text>
+          <text class="src" x="460" y="393">xg.probabilitats</text>
+          <text class="src" x="460" y="407">cadena/opcio_girat.py:78</text>
+          </g>
+          <g id="p-entrada">
+          <rect x="448" y="704" width="200" height="140" rx="6" fill="#ffffff"/>
+          <rect x="448" y="704" width="200" height="140" rx="6" fill="#4b5351" fill-opacity="0.08" stroke="#5f6765" stroke-width="1"/>
+          <rect x="592" y="716" width="44" height="16" rx="2" fill="none" stroke="#1c1f1e" stroke-opacity="0.16" stroke-width="0.8"/>
+          <text class="tag" x="598" y="727">INPUT</text>
+          <text class="nm" x="460" y="729">Smart Tagging</text>
+          <text class="dt" x="460" y="745">SportsCode file: set pieces and</text>
+          <text class="dt" x="460" y="759">the phases that name the team</text>
+          <text class="dt" x="460" y="773">on the ball. Their team is first</text>
+          <text class="dt" x="460" y="787">checked against the model</text>
+          <text class="src" x="460" y="805">stf.llegeix · __main__.py:131</text>
+          <text class="src" x="460" y="819">equip_quadra</text>
+          <text class="src" x="460" y="833">cadena/opcio_girat.py:146-148</text>
+          </g>
+          <g id="p-canvis">
+          <rect x="448" y="860" width="200" height="100" rx="6" fill="#ffffff"/>
+          <rect x="448" y="860" width="200" height="100" rx="6" fill="#ffffff" stroke="#1c1f1e" stroke-width="1"/>
+          <rect x="580" y="872" width="56" height="16" rx="2" fill="none" stroke="#1c1f1e" stroke-opacity="0.16" stroke-width="0.8"/>
+          <text class="tag" x="586" y="883">STAGE 6</text>
+          <text class="nm" x="460" y="885">Change model: q</text>
+          <text class="dt" x="460" y="901">LightGBM on the 206 signals of</text>
+          <text class="dt" x="460" y="915">stages 2 and 4: how likely the</text>
+          <text class="dt" x="460" y="929">team changes within 6 frames</text>
+          <text class="src" x="460" y="947">q_de · cadena/opcio_girat.py:76</text>
+          </g>
+      </svg>

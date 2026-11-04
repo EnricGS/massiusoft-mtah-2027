@@ -1,0 +1,32 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+codi/possessio/.cache/
+.fet-per-fes_repositori
+.DS_Store
+
+# the clone of the challenge repository (README, step 2); only at the root, not codi/possessio/oficial/
+/oficial/
+
+# the open data is downloaded, never committed; the match data never comes here
+dades/*
+!dades/README.md
+
+# the possession file and what the command writes next to it
+*.csv
+*.csv.sha256
+*.csv.validacio.txt
+.cadena-*/
+*.part
+
+# a safety net: no file of the data bundle, and nothing the inspection writes, is ever committed
+/data/
+*.mp4
+*_atd.xml
+*_atd.txt
+*smart_tagging*
+!*smart_tagging*.py
+*homography*
+*.html
+INVENTARI.md

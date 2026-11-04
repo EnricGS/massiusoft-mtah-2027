@@ -1,0 +1,827 @@
+{
+ "clau": "bd4442c8b3175b87d71f29feeba89d2233d7dd84f42396c8b2f3c24dc403cec5",
+ "resum": [
+  {
+   "escenari": "net",
+   "spell A \u00d71+\u00d7\u00bc": 0.6254667230946327,
+   "spell A control": 0.746112660729658,
+   "spell A context": 0.7749010287807825,
+   "spell A per possessi\u00f3": 0.7862714554260135,
+   "spell A contacte": 0.7886405780679746,
+   "spell A canvis": 0.7984810551032542,
+   "spell A aturades": 0.801477596106541,
+   "spell A xarxa": 0.8025549598400218,
+   "spell A xarxes": 0.8082132036163809,
+   "macro": 0.9537296411708412,
+   "spell sense decodificar": 0.6315113851913623,
+   "spell dfl": 0.7747486323853358,
+   "spell metrica": 0.8862972031554864,
+   "possessions per real": 0.9323879583259165,
+   "millor base": "smooth125\u00b7D",
+   "spell millor base": 0.3764218298869791,
+   "spell publicada": 0.3116706736315033,
+   "diferencia millor base": 0.43179137372940185,
+   "baix millor base": 0.40710561379744625,
+   "alt millor base": 0.4517727491323106,
+   "guanya millor base": 10,
+   "partits millor base": 10,
+   "diferencia publicada": 0.4965425299848777,
+   "baix publicada": 0.47681030149060155,
+   "alt publicada": 0.5142180291561282,
+   "guanya publicada": 10,
+   "partits publicada": 10,
+   "diferencia A context": 0.03331217483559849,
+   "baix A context": 0.017888226712444295,
+   "alt A context": 0.04789577401648071,
+   "guanya A context": 8,
+   "partits A context": 10,
+   "diferencia A \u00d71+\u00d7\u00bc": 0.1827464805217483,
+   "baix A \u00d71+\u00d7\u00bc": 0.15588135422038987,
+   "alt A \u00d71+\u00d7\u00bc": 0.2043141632667449,
+   "guanya A \u00d71+\u00d7\u00bc": 10,
+   "partits A \u00d71+\u00d7\u00bc": 10
+  },
+  {
+   "escenari": "curts \u00d7\u00bc",
+   "spell A \u00d71+\u00d7\u00bc": 0.5688183967909097,
+   "spell A control": 0.605790388150506,
+   "spell A context": 0.6393268949942396,
+   "spell A per possessi\u00f3": 0.6441547521928317,
+   "spell A contacte": 0.6472577739512262,
+   "spell A canvis": 0.6516557626624804,
+   "spell A aturades": 0.658702305302658,
+   "spell A xarxa": 0.6825840653235009,
+   "spell A xarxes": 0.6843561963873485,
+   "macro": 0.9251644549719529,
+   "spell sense decodificar": 0.4508016694263756,
+   "spell dfl": 0.6526148457563091,
+   "spell metrica": 0.7584193478597735,
+   "possessions per real": 0.8443572943334404,
+   "millor base": "smooth125\u00b7X",
+   "spell millor base": 0.25568760009862196,
+   "spell publicada": 0.22121736747334317,
+   "diferencia millor base": 0.42866859628872644,
+   "baix millor base": 0.4121358761822229,
+   "alt millor base": 0.444796811266975,
+   "guanya millor base": 10,
+   "partits millor base": 10,
+   "diferencia publicada": 0.46313882891400526,
+   "baix publicada": 0.448034964036082,
+   "alt publicada": 0.47701960549095335,
+   "guanya publicada": 10,
+   "partits publicada": 10,
+   "diferencia A context": 0.04502930139310888,
+   "baix A context": 0.03148566641758627,
+   "alt A context": 0.05680305556838663,
+   "guanya A context": 9,
+   "partits A context": 10,
+   "diferencia A \u00d71+\u00d7\u00bc": 0.11553779959643866,
+   "baix A \u00d71+\u00d7\u00bc": 0.0994032400532438,
+   "alt A \u00d71+\u00d7\u00bc": 0.13087407182012614,
+   "guanya A \u00d71+\u00d7\u00bc": 10,
+   "partits A \u00d71+\u00d7\u00bc": 10
+  },
+  {
+   "escenari": "llargs \u00d7\u00bc",
+   "spell A \u00d71+\u00d7\u00bc": 0.5312891125033927,
+   "spell A control": 0.5927233548012796,
+   "spell A context": 0.6214015600500041,
+   "spell A per possessi\u00f3": 0.6285472620793465,
+   "spell A contacte": 0.6328509103384565,
+   "spell A canvis": 0.6385278838248652,
+   "spell A aturades": 0.6476371209666546,
+   "spell A xarxa": 0.6585519497314662,
+   "spell A xarxes": 0.6616259046423384,
+   "macro": 0.9101935801676186,
+   "spell sense decodificar": 0.4265251446824746,
+   "spell dfl": 0.6299928944116113,
+   "spell metrica": 0.7354362618473679,
+   "possessions per real": 0.8182008964027856,
+   "millor base": "smooth125\u00b7D",
+   "spell millor base": 0.2193262008889735,
+   "spell publicada": 0.20699415795781,
+   "diferencia millor base": 0.4422997037533648,
+   "baix millor base": 0.42126283139143406,
+   "alt millor base": 0.463804104799001,
+   "guanya millor base": 10,
+   "partits millor base": 10,
+   "diferencia publicada": 0.4546317466845283,
+   "baix publicada": 0.4313274681300431,
+   "alt publicada": 0.4808031800213874,
+   "guanya publicada": 10,
+   "partits publicada": 10,
+   "diferencia A context": 0.04022434459233417,
+   "baix A context": 0.03045620200213568,
+   "alt A context": 0.05035736414906922,
+   "guanya A context": 10,
+   "partits A context": 10,
+   "diferencia A \u00d71+\u00d7\u00bc": 0.13033679213894572,
+   "baix A \u00d71+\u00d7\u00bc": 0.11599239119460747,
+   "alt A \u00d71+\u00d7\u00bc": 0.1451828581865369,
+   "guanya A \u00d71+\u00d7\u00bc": 10,
+   "partits A \u00d71+\u00d7\u00bc": 10
+  },
+  {
+   "escenari": "barreja \u00d7\u00bc",
+   "spell A \u00d71+\u00d7\u00bc": 0.544301528689749,
+   "spell A control": 0.6006065548521042,
+   "spell A context": 0.6307256431688679,
+   "spell A per possessi\u00f3": 0.6471025737271285,
+   "spell A contacte": 0.6441041466395371,
+   "spell A canvis": 0.6533106206920766,
+   "spell A aturades": 0.6605078392189279,
+   "spell A xarxa": 0.6671117435777508,
+   "spell A xarxes": 0.6712099102999084,
+   "macro": 0.9147986874893295,
+   "spell sense decodificar": 0.4430434682805278,
+   "spell dfl": 0.6429653058302888,
+   "spell metrica": 0.7371139873956875,
+   "possessions per real": 0.8194893796388442,
+   "millor base": "smooth125\u00b7X",
+   "spell millor base": 0.22393326443895903,
+   "spell publicada": 0.20720116695212196,
+   "diferencia millor base": 0.44727664586094945,
+   "baix millor base": 0.4326247828234861,
+   "alt millor base": 0.4632964408243872,
+   "guanya millor base": 10,
+   "partits millor base": 10,
+   "diferencia publicada": 0.4640087433477865,
+   "baix publicada": 0.44542716194790194,
+   "alt publicada": 0.482271109709243,
+   "guanya publicada": 10,
+   "partits publicada": 10,
+   "diferencia A context": 0.040484267131040565,
+   "baix A context": 0.029333629777610504,
+   "alt A context": 0.05088331003495176,
+   "guanya A context": 10,
+   "partits A context": 10,
+   "diferencia A \u00d71+\u00d7\u00bc": 0.1269083816101595,
+   "baix A \u00d71+\u00d7\u00bc": 0.11685940637121099,
+   "alt A \u00d71+\u00d7\u00bc": 0.13778553016698228,
+   "guanya A \u00d71+\u00d7\u00bc": 10,
+   "partits A \u00d71+\u00d7\u00bc": 10
+  },
+  {
+   "escenari": "aire \u00d7\u00bc",
+   "spell A \u00d71+\u00d7\u00bc": 0.4926791180219207,
+   "spell A control": 0.5247607221428303,
+   "spell A context": 0.5561879876850675,
+   "spell A per possessi\u00f3": 0.5642830331444533,
+   "spell A contacte": 0.5746211303974469,
+   "spell A canvis": 0.5774350641243573,
+   "spell A aturades": 0.5853515469702936,
+   "spell A xarxa": 0.6003126633482837,
+   "spell A xarxes": 0.6115449637370295,
+   "macro": 0.8948391757254932,
+   "spell sense decodificar": 0.3553229936657474,
+   "spell dfl": 0.5548155943416896,
+   "spell metrica": 0.7439134923261559,
+   "possessions per real": 0.7968609319570992,
+   "millor base": "smooth125\u00b7X",
+   "spell millor base": 0.22700653420078049,
+   "spell publicada": 0.21662619839065536,
+   "diferencia millor base": 0.384538429536249,
+   "baix millor base": 0.3679375330514288,
+   "alt millor base": 0.399691090469362,
+   "guanya millor base": 10,
+   "partits millor base": 10,
+   "diferencia publicada": 0.3949187653463741,
+   "baix publicada": 0.3755662674523703,
+   "alt publicada": 0.412296984424224,
+   "guanya publicada": 10,
+   "partits publicada": 10,
+   "diferencia A context": 0.055356976051962034,
+   "baix A context": 0.04008514089299819,
+   "alt A context": 0.07014934225815929,
+   "guanya A context": 10,
+   "partits A context": 10,
+   "diferencia A \u00d71+\u00d7\u00bc": 0.11886584571510875,
+   "baix A \u00d71+\u00d7\u00bc": 0.1044462642285439,
+   "alt A \u00d71+\u00d7\u00bc": 0.1349913375132958,
+   "guanya A \u00d71+\u00d7\u00bc": 10,
+   "partits A \u00d71+\u00d7\u00bc": 10
+  },
+  {
+   "escenari": "curts",
+   "spell A \u00d71+\u00d7\u00bc": 0.5346789543492159,
+   "spell A control": 0.5453548402366838,
+   "spell A context": 0.5830099277455318,
+   "spell A per possessi\u00f3": 0.5826846144483924,
+   "spell A contacte": 0.5886724812898538,
+   "spell A canvis": 0.5912457951558018,
+   "spell A aturades": 0.6010687861558053,
+   "spell A xarxa": 0.641580473621719,
+   "spell A xarxes": 0.6439921856590641,
+   "macro": 0.911545074478312,
+   "spell sense decodificar": 0.32600159457993494,
+   "spell dfl": 0.6145957776083427,
+   "spell metrica": 0.7125838044440806,
+   "possessions per real": 0.8371629407134747,
+   "millor base": "smooth125\u00b7X",
+   "spell millor base": 0.23979199773455462,
+   "spell publicada": 0.1850168482109928,
+   "diferencia millor base": 0.4042001879245095,
+   "baix millor base": 0.3858403290667646,
+   "alt millor base": 0.4234270284616786,
+   "guanya millor base": 10,
+   "partits millor base": 10,
+   "diferencia publicada": 0.4589753374480714,
+   "baix publicada": 0.4357816146313272,
+   "alt publicada": 0.48195538896881207,
+   "guanya publicada": 10,
+   "partits publicada": 10,
+   "diferencia A context": 0.06098225791353225,
+   "baix A context": 0.05091992934266034,
+   "alt A context": 0.0704353891068586,
+   "guanya A context": 10,
+   "partits A context": 10,
+   "diferencia A \u00d71+\u00d7\u00bc": 0.1093132313098483,
+   "baix A \u00d71+\u00d7\u00bc": 0.08911824799192145,
+   "alt A \u00d71+\u00d7\u00bc": 0.12989329049142856,
+   "guanya A \u00d71+\u00d7\u00bc": 10,
+   "partits A \u00d71+\u00d7\u00bc": 10
+  },
+  {
+   "escenari": "llargs",
+   "spell A \u00d71+\u00d7\u00bc": 0.4973879733984538,
+   "spell A control": 0.5096949422058803,
+   "spell A context": 0.5472820011669932,
+   "spell A per possessi\u00f3": 0.5536575264254571,
+   "spell A contacte": 0.5547158483661568,
+   "spell A canvis": 0.5577673059781219,
+   "spell A aturades": 0.5676091062855008,
+   "spell A xarxa": 0.606710610222364,
+   "spell A xarxes": 0.6069406286427995,
+   "macro": 0.8936528961843659,
+   "spell sense decodificar": 0.30073933555953564,
+   "spell dfl": 0.5712125544148862,
+   "spell metrica": 0.6903061351745973,
+   "possessions per real": 0.7894689953409978,
+   "millor base": "smooth125\u00b7X",
+   "spell millor base": 0.19895074574623695,
+   "spell publicada": 0.18214490068611303,
+   "diferencia millor base": 0.4079898828965625,
+   "baix millor base": 0.38305031940341244,
+   "alt millor base": 0.43246006403153264,
+   "guanya millor base": 10,
+   "partits millor base": 10,
+   "diferencia publicada": 0.4247957279566864,
+   "baix publicada": 0.39808268155521453,
+   "alt publicada": 0.4499108497188901,
+   "guanya publicada": 10,
+   "partits publicada": 10,
+   "diferencia A context": 0.05965862747580621,
+   "baix A context": 0.043093978106134814,
+   "alt A context": 0.07828021451260948,
+   "guanya A context": 10,
+   "partits A context": 10,
+   "diferencia A \u00d71+\u00d7\u00bc": 0.10955265524434568,
+   "baix A \u00d71+\u00d7\u00bc": 0.0894145880131472,
+   "alt A \u00d71+\u00d7\u00bc": 0.12968081260508,
+   "guanya A \u00d71+\u00d7\u00bc": 10,
+   "partits A \u00d71+\u00d7\u00bc": 10
+  },
+  {
+   "escenari": "barreja",
+   "spell A \u00d71+\u00d7\u00bc": 0.5151999022093403,
+   "spell A control": 0.5229153685111497,
+   "spell A context": 0.561691255103151,
+   "spell A per possessi\u00f3": 0.5653368600677741,
+   "spell A contacte": 0.5653526854354562,
+   "spell A canvis": 0.5718737862742672,
+   "spell A aturades": 0.5792128337593143,
+   "spell A xarxa": 0.611283124980467,
+   "spell A xarxes": 0.6164870085544463,
+   "macro": 0.89759336246305,
+   "spell sense decodificar": 0.29919408132400915,
+   "spell dfl": 0.5834712248837278,
+   "spell metrica": 0.693523837119456,
+   "possessions per real": 0.7934067670849136,
+   "millor base": "smooth125\u00b7X",
+   "spell millor base": 0.2092994534007743,
+   "spell publicada": 0.18318436211147057,
+   "diferencia millor base": 0.407187555153672,
+   "baix millor base": 0.3848709052791647,
+   "alt millor base": 0.4305194763776665,
+   "guanya millor base": 10,
+   "partits millor base": 10,
+   "diferencia publicada": 0.4333026464429757,
+   "baix publicada": 0.40958611225587205,
+   "alt publicada": 0.4586074397659137,
+   "guanya publicada": 10,
+   "partits publicada": 10,
+   "diferencia A context": 0.05479575345129528,
+   "baix A context": 0.03838186347811415,
+   "alt A context": 0.07253816403674185,
+   "guanya A context": 10,
+   "partits A context": 10,
+   "diferencia A \u00d71+\u00d7\u00bc": 0.10128710634510596,
+   "baix A \u00d71+\u00d7\u00bc": 0.08150682656898164,
+   "alt A \u00d71+\u00d7\u00bc": 0.12216455877744485,
+   "guanya A \u00d71+\u00d7\u00bc": 10,
+   "partits A \u00d71+\u00d7\u00bc": 10
+  },
+  {
+   "escenari": "aire",
+   "spell A \u00d71+\u00d7\u00bc": 0.46637219612957914,
+   "spell A control": 0.47712395620633374,
+   "spell A context": 0.5083289858365223,
+   "spell A per possessi\u00f3": 0.5109605484785406,
+   "spell A contacte": 0.5203970903659239,
+   "spell A canvis": 0.5219782933236526,
+   "spell A aturades": 0.5259356106455618,
+   "spell A xarxa": 0.5629873311141618,
+   "spell A xarxes": 0.5640030916008694,
+   "macro": 0.8770353352478664,
+   "spell sense decodificar": 0.25243760333203463,
+   "spell dfl": 0.5098055602043031,
+   "spell metrica": 0.6904639981928572,
+   "possessions per real": 0.7702277104854549,
+   "millor base": "smooth125\u00b7X",
+   "spell millor base": 0.20853657617244484,
+   "spell publicada": 0.18407118324496488,
+   "diferencia millor base": 0.3554665154284245,
+   "baix millor base": 0.3398595816173957,
+   "alt millor base": 0.37007752065291405,
+   "guanya millor base": 10,
+   "partits millor base": 10,
+   "diferencia publicada": 0.3799319083559044,
+   "baix publicada": 0.3629881444682536,
+   "alt publicada": 0.39519001348912547,
+   "guanya publicada": 10,
+   "partits publicada": 10,
+   "diferencia A context": 0.055674105764347025,
+   "baix A context": 0.047424761017995046,
+   "alt A context": 0.06413689371243743,
+   "guanya A context": 10,
+   "partits A context": 10,
+   "diferencia A \u00d71+\u00d7\u00bc": 0.09763089547129018,
+   "baix A \u00d71+\u00d7\u00bc": 0.0904000798403235,
+   "alt A \u00d71+\u00d7\u00bc": 0.10530351348731211,
+   "guanya A \u00d71+\u00d7\u00bc": 10,
+   "partits A \u00d71+\u00d7\u00bc": 10
+  },
+  {
+   "escenari": "soroll2",
+   "spell A \u00d71+\u00d7\u00bc": 0.34762309759290605,
+   "spell A control": 0.33310960610297735,
+   "spell A context": 0.37285530760396457,
+   "spell A per possessi\u00f3": 0.3810549864170097,
+   "spell A contacte": 0.38446393212789426,
+   "spell A canvis": 0.3842016012457801,
+   "spell A aturades": 0.3878683118806557,
+   "spell A xarxa": 0.47250448338513185,
+   "spell A xarxes": 0.47784878884396675,
+   "macro": 0.7702641288686103,
+   "spell sense decodificar": 0.11097679231012045,
+   "spell dfl": 0.43980879348885915,
+   "spell metrica": 0.5666087780058846,
+   "possessions per real": 0.9630626447113709,
+   "millor base": "smooth125\u00b7X",
+   "spell millor base": 0.16407975337805455,
+   "spell publicada": 0.1323961987171834,
+   "diferencia millor base": 0.31376903546591217,
+   "baix millor base": 0.2985524778135776,
+   "alt millor base": 0.328504761176809,
+   "guanya millor base": 10,
+   "partits millor base": 10,
+   "diferencia publicada": 0.34545259012678337,
+   "baix publicada": 0.32834473378562923,
+   "alt publicada": 0.3618696933144894,
+   "guanya publicada": 10,
+   "partits publicada": 10,
+   "diferencia A context": 0.10499348124000223,
+   "baix A context": 0.09600513959385049,
+   "alt A context": 0.1137200512463091,
+   "guanya A context": 10,
+   "partits A context": 10,
+   "diferencia A \u00d71+\u00d7\u00bc": 0.1302256912510607,
+   "baix A \u00d71+\u00d7\u00bc": 0.11669601144203558,
+   "alt A \u00d71+\u00d7\u00bc": 0.14400873309282194,
+   "guanya A \u00d71+\u00d7\u00bc": 10,
+   "partits A \u00d71+\u00d7\u00bc": 10
+  }
+ ],
+ "triades": {
+  "dfl-J03WMX": {
+   "A \u00d71+\u00d7\u00bc": [
+    8.0,
+    25
+   ],
+   "A control": [
+    4.0,
+    25
+   ],
+   "A context": [
+    4.0,
+    12
+   ],
+   "A per possessi\u00f3": [
+    8.0,
+    12
+   ],
+   "A contacte": [
+    8.0,
+    1
+   ],
+   "A canvis": [
+    4.0,
+    16.0,
+    12
+   ],
+   "A aturades": [
+    4.0,
+    32.0,
+    12
+   ],
+   "A xarxa": [
+    4.0,
+    32.0,
+    12
+   ],
+   "A xarxes": [
+    4.0,
+    64.0,
+    12
+   ]
+  },
+  "dfl-J03WN1": {
+   "A \u00d71+\u00d7\u00bc": [
+    8.0,
+    25
+   ],
+   "A control": [
+    4.0,
+    25
+   ],
+   "A context": [
+    4.0,
+    12
+   ],
+   "A per possessi\u00f3": [
+    8.0,
+    12
+   ],
+   "A contacte": [
+    8.0,
+    12
+   ],
+   "A canvis": [
+    4.0,
+    16.0,
+    12
+   ],
+   "A aturades": [
+    4.0,
+    32.0,
+    12
+   ],
+   "A xarxa": [
+    4.0,
+    32.0,
+    12
+   ],
+   "A xarxes": [
+    4.0,
+    32.0,
+    12
+   ]
+  },
+  "dfl-J03WOH": {
+   "A \u00d71+\u00d7\u00bc": [
+    8.0,
+    25
+   ],
+   "A control": [
+    4.0,
+    25
+   ],
+   "A context": [
+    4.0,
+    12
+   ],
+   "A per possessi\u00f3": [
+    8.0,
+    12
+   ],
+   "A contacte": [
+    8.0,
+    1
+   ],
+   "A canvis": [
+    4.0,
+    16.0,
+    12
+   ],
+   "A aturades": [
+    4.0,
+    32.0,
+    12
+   ],
+   "A xarxa": [
+    4.0,
+    32.0,
+    12
+   ],
+   "A xarxes": [
+    4.0,
+    32.0,
+    12
+   ]
+  },
+  "dfl-J03WOY": {
+   "A \u00d71+\u00d7\u00bc": [
+    8.0,
+    25
+   ],
+   "A control": [
+    4.0,
+    25
+   ],
+   "A context": [
+    4.0,
+    12
+   ],
+   "A per possessi\u00f3": [
+    8.0,
+    12
+   ],
+   "A contacte": [
+    8.0,
+    1
+   ],
+   "A canvis": [
+    4.0,
+    16.0,
+    1
+   ],
+   "A aturades": [
+    4.0,
+    32.0,
+    12
+   ],
+   "A xarxa": [
+    4.0,
+    32.0,
+    12
+   ],
+   "A xarxes": [
+    4.0,
+    32.0,
+    12
+   ]
+  },
+  "dfl-J03WPY": {
+   "A \u00d71+\u00d7\u00bc": [
+    8.0,
+    25
+   ],
+   "A control": [
+    4.0,
+    25
+   ],
+   "A context": [
+    2.0,
+    25
+   ],
+   "A per possessi\u00f3": [
+    8.0,
+    12
+   ],
+   "A contacte": [
+    8.0,
+    1
+   ],
+   "A canvis": [
+    4.0,
+    16.0,
+    12
+   ],
+   "A aturades": [
+    4.0,
+    32.0,
+    12
+   ],
+   "A xarxa": [
+    4.0,
+    32.0,
+    12
+   ],
+   "A xarxes": [
+    4.0,
+    32.0,
+    12
+   ]
+  },
+  "dfl-J03WQQ": {
+   "A \u00d71+\u00d7\u00bc": [
+    8.0,
+    25
+   ],
+   "A control": [
+    4.0,
+    25
+   ],
+   "A context": [
+    4.0,
+    12
+   ],
+   "A per possessi\u00f3": [
+    8.0,
+    12
+   ],
+   "A contacte": [
+    8.0,
+    1
+   ],
+   "A canvis": [
+    4.0,
+    16.0,
+    1
+   ],
+   "A aturades": [
+    4.0,
+    32.0,
+    12
+   ],
+   "A xarxa": [
+    4.0,
+    32.0,
+    12
+   ],
+   "A xarxes": [
+    4.0,
+    32.0,
+    12
+   ]
+  },
+  "dfl-J03WR9": {
+   "A \u00d71+\u00d7\u00bc": [
+    8.0,
+    25
+   ],
+   "A control": [
+    4.0,
+    25
+   ],
+   "A context": [
+    4.0,
+    12
+   ],
+   "A per possessi\u00f3": [
+    8.0,
+    12
+   ],
+   "A contacte": [
+    8.0,
+    1
+   ],
+   "A canvis": [
+    4.0,
+    16.0,
+    12
+   ],
+   "A aturades": [
+    4.0,
+    32.0,
+    12
+   ],
+   "A xarxa": [
+    4.0,
+    32.0,
+    12
+   ],
+   "A xarxes": [
+    4.0,
+    32.0,
+    1
+   ]
+  },
+  "metrica-1": {
+   "A \u00d71+\u00d7\u00bc": [
+    8.0,
+    25
+   ],
+   "A control": [
+    4.0,
+    25
+   ],
+   "A context": [
+    4.0,
+    12
+   ],
+   "A per possessi\u00f3": [
+    8.0,
+    12
+   ],
+   "A contacte": [
+    8.0,
+    1
+   ],
+   "A canvis": [
+    4.0,
+    16.0,
+    1
+   ],
+   "A aturades": [
+    4.0,
+    16.0,
+    12
+   ],
+   "A xarxa": [
+    4.0,
+    32.0,
+    12
+   ],
+   "A xarxes": [
+    4.0,
+    32.0,
+    12
+   ]
+  },
+  "metrica-2": {
+   "A \u00d71+\u00d7\u00bc": [
+    8.0,
+    25
+   ],
+   "A control": [
+    4.0,
+    25
+   ],
+   "A context": [
+    4.0,
+    12
+   ],
+   "A per possessi\u00f3": [
+    8.0,
+    12
+   ],
+   "A contacte": [
+    8.0,
+    12
+   ],
+   "A canvis": [
+    4.0,
+    16.0,
+    12
+   ],
+   "A aturades": [
+    4.0,
+    32.0,
+    12
+   ],
+   "A xarxa": [
+    4.0,
+    16.0,
+    12
+   ],
+   "A xarxes": [
+    4.0,
+    32.0,
+    12
+   ]
+  },
+  "metrica-3": {
+   "A \u00d71+\u00d7\u00bc": [
+    8.0,
+    25
+   ],
+   "A control": [
+    4.0,
+    25
+   ],
+   "A context": [
+    4.0,
+    12
+   ],
+   "A per possessi\u00f3": [
+    8.0,
+    12
+   ],
+   "A contacte": [
+    8.0,
+    1
+   ],
+   "A canvis": [
+    4.0,
+    16.0,
+    12
+   ],
+   "A aturades": [
+    4.0,
+    32.0,
+    12
+   ],
+   "A xarxa": [
+    4.0,
+    32.0,
+    12
+   ],
+   "A xarxes": [
+    4.0,
+    32.0,
+    12
+   ]
+  }
+ }
+}

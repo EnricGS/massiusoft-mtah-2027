@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 672 892" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="bench-title bench-desc" id="bench-root">
+        <title id="bench-title">The open bench</title>
+        <desc id="bench-desc">Ten open matches with per-frame labels at the first touch are degraded to look like the ATD and sampled, and a Smart Tagging is simulated on them at three levels of error; each match is scored by models trained on the other nine, with the decoder, dead-ball and phase settings the other nine choose, and the pipeline&#x27;s model is trained on all ten.</desc>
+        <defs>
+      <style>#bench-root { font-family: 'Avenir Next', system-ui, sans-serif; color: #1c1f1e; }
+      #bench-root .diagram-container { width: 100%; overflow-x: auto; }
+      #bench-root .diagram-container { overflow-x: visible; }
+      #bench-root .nm { font-family: 'Avenir Next', system-ui, sans-serif; font-size: 12px; font-weight: 600; fill: #1c1f1e; }
+      #bench-root .dt { font-family: 'Avenir Next', system-ui, sans-serif; font-size: 10px; font-weight: 400; fill: #4b5351; }
+      #bench-root .src { font-family: Menlo, ui-monospace, monospace; font-size: 9px; fill: #5f6765; }
+      #bench-root .tag { font-family: Menlo, ui-monospace, monospace; font-size: 8.5px; letter-spacing: 0.1em; fill: #5f6765; }
+      #bench-root .tag-accent { fill: #bf4520; }</style>
+          <marker id="bench-arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#4b5351"/></marker>
+          <marker id="bench-arrow-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#bf4520"/></marker>
+        </defs>
+        <rect width="100%" height="100%" fill="#ffffff"/>
+        <!-- Les fletxes primer, i després els nodes -->
+          <path d="M 172 128 L 172 160" fill="none" stroke="#4b5351" stroke-width="1" marker-end="url(#bench-arrow)"/>
+          <path d="M 500 128 L 500 160" fill="none" stroke="#4b5351" stroke-width="1" marker-end="url(#bench-arrow)"/>
+          <path d="M 172 260 L 172 292" fill="none" stroke="#4b5351" stroke-width="1" marker-end="url(#bench-arrow)"/>
+          <path d="M 320 362 L 352 362" fill="none" stroke="#4b5351" stroke-width="1" marker-end="url(#bench-arrow)"/>
+          <path d="M 500 432 L 500 464" fill="none" stroke="#4b5351" stroke-width="1" marker-end="url(#bench-arrow)"/>
+          <path d="M 320 528 L 352 528" fill="none" stroke="#4b5351" stroke-width="1" marker-end="url(#bench-arrow)"/>
+          <path d="M 500 592 L 500 672 Q 500 680 492 680 L 320 680" fill="none" stroke="#bf4520" stroke-width="1" marker-end="url(#bench-arrow-accent)"/>
+          <path d="M 172 736 L 172 768" fill="none" stroke="#4b5351" stroke-width="1" marker-end="url(#bench-arrow)"/>
+          <path d="M 320 720 L 492 720 Q 500 720 500 728 L 500 768" fill="none" stroke="#4b5351" stroke-width="1" marker-end="url(#bench-arrow)"/>
+          <g id="b-dfl">
+          <rect x="24" y="16" width="296" height="112" rx="6" fill="#ffffff"/>
+          <rect x="24" y="16" width="296" height="112" rx="6" fill="#4b5351" fill-opacity="0.08" stroke="#5f6765" stroke-width="1"/>
+          <rect x="240" y="28" width="68" height="16" rx="2" fill="none" stroke="#1c1f1e" stroke-opacity="0.16" stroke-width="0.8"/>
+          <text class="tag" x="246" y="39">OPEN DATA</text>
+          <text class="nm" x="36" y="41">DFL/IDSSE, 7 matches</text>
+          <text class="dt" x="36" y="57">Labels per frame: BallStatus (alive or dead),</text>
+          <text class="dt" x="36" y="71">then BallPossession, moved to the first touch</text>
+          <text class="dt" x="36" y="85">of the other team with DFL&#x27;s own events</text>
+          <text class="src" x="36" y="103">banc/dfl.py:61</text>
+          <text class="src" x="36" y="117">veritat · banc/veritat_toc.py:203</text>
+          </g>
+          <g id="b-metrica">
+          <rect x="352" y="16" width="296" height="112" rx="6" fill="#ffffff"/>
+          <rect x="352" y="16" width="296" height="112" rx="6" fill="#4b5351" fill-opacity="0.08" stroke="#5f6765" stroke-width="1"/>
+          <rect x="568" y="28" width="68" height="16" rx="2" fill="none" stroke="#1c1f1e" stroke-opacity="0.16" stroke-width="0.8"/>
+          <text class="tag" x="574" y="39">OPEN DATA</text>
+          <text class="nm" x="364" y="41">Metrica, 3 matches</text>
+          <text class="dt" x="364" y="57">Labels derived from the event data, with the</text>
+          <text class="dt" x="364" y="71">rules listed in §3: possession changes at</text>
+          <text class="dt" x="364" y="85">the first touch of the other team</text>
+          <text class="src" x="364" y="103">banc/metrica.py:24</text>
+          <text class="src" x="364" y="117">veritat · banc/veritat_toc.py:203</text>
+          </g>
+          <g id="b-degrada">
+          <rect x="24" y="160" width="624" height="100" rx="6" fill="#ffffff"/>
+          <rect x="24" y="160" width="624" height="100" rx="6" fill="#ffffff" stroke="#1c1f1e" stroke-width="1"/>
+          <rect x="580" y="172" width="56" height="16" rx="2" fill="none" stroke="#1c1f1e" stroke-opacity="0.16" stroke-width="0.8"/>
+          <text class="tag" x="586" y="183">DEGRADE</text>
+          <text class="nm" x="36" y="185">Made to look like the ATD</text>
+          <text class="dt" x="36" y="201">Training: short, long and mixed ball gaps, with the assumed position error and with ¼ of it.</text>
+          <text class="dt" x="36" y="215">Players lost, slots duplicated and shuffled. Only tested: clean, air-ball gaps, twice the</text>
+          <text class="dt" x="36" y="229">error, and the gaps that the tool measuring the match&#x27;s ATD describes (match ×¼)</text>
+          <text class="src" x="36" y="247">degrada.aplica · banc/model_a_partit.py:95</text>
+          </g>
+          <g id="b-mostres">
+          <rect x="24" y="292" width="296" height="140" rx="6" fill="#ffffff"/>
+          <rect x="24" y="292" width="296" height="140" rx="6" fill="#ffffff" stroke="#1c1f1e" stroke-width="1"/>
+          <rect x="260" y="304" width="48" height="16" rx="2" fill="none" stroke="#1c1f1e" stroke-opacity="0.16" stroke-width="0.8"/>
+          <text class="tag" x="266" y="315">SAMPLE</text>
+          <text class="nm" x="36" y="317">Training rows</text>
+          <text class="dt" x="36" y="333">1 labelled frame in 16 of every training</text>
+          <text class="dt" x="36" y="347">scenario, at least 8 per possession, and</text>
+          <text class="dt" x="36" y="361">each one&#x27;s team-swapped copy; for the</text>
+          <text class="dt" x="36" y="375">networks, half with the pitch flipped</text>
+          <text class="src" x="36" y="393">model_a_possessio.mostres</text>
+          <text class="src" x="36" y="407">banc/model_a_contacte.py:75</text>
+          <text class="src" x="36" y="421">banc/model_camp_girat.py:115</text>
+          </g>
+          <g id="b-prova">
+          <rect x="352" y="292" width="296" height="140" rx="6" fill="#ffffff"/>
+          <rect x="352" y="292" width="296" height="140" rx="6" fill="#ffffff" stroke="#1c1f1e" stroke-width="1"/>
+          <rect x="548" y="304" width="88" height="16" rx="2" fill="none" stroke="#1c1f1e" stroke-opacity="0.16" stroke-width="0.8"/>
+          <text class="tag" x="554" y="315">LEAVE ONE OUT</text>
+          <text class="nm" x="364" y="317">Models per match</text>
+          <text class="dt" x="364" y="333">All trained on the other nine. The second</text>
+          <text class="dt" x="364" y="347">classifier and the change model learn from</text>
+          <text class="dt" x="364" y="361">first classifiers and networks that never</text>
+          <text class="dt" x="364" y="375">saw those matches (three groups)</text>
+          <text class="src" x="364" y="393">banc/model_a_contacte.py:107</text>
+          <text class="src" x="364" y="407">banc/model_a_canvis.py:127</text>
+          <text class="src" x="364" y="421">banc/model_camp_girat.py:131, 148, 172</text>
+          </g>
+          <g id="b-smart">
+          <rect x="24" y="464" width="296" height="128" rx="6" fill="#ffffff"/>
+          <rect x="24" y="464" width="296" height="128" rx="6" fill="#4b5351" fill-opacity="0.08" stroke="#5f6765" stroke-width="1"/>
+          <rect x="240" y="476" width="68" height="16" rx="2" fill="none" stroke="#1c1f1e" stroke-opacity="0.16" stroke-width="0.8"/>
+          <text class="tag" x="246" y="487">SIMULATED</text>
+          <text class="nm" x="36" y="489">Smart Tagging</text>
+          <text class="dt" x="36" y="505">Set pieces from the open events, phases from</text>
+          <text class="dt" x="36" y="519">the truth, with the errors of a level: good,</text>
+          <text class="dt" x="36" y="533">medium or bad; or none at all. Seeds to choose,</text>
+          <text class="dt" x="36" y="547">and other seeds to test</text>
+          <text class="src" x="36" y="565">banc/smart_tagging_simulat.py:214</text>
+          <text class="src" x="36" y="579">banc/fases_simulades.py:72</text>
+          </g>
+          <g id="b-graella">
+          <rect x="352" y="464" width="296" height="128" rx="6" fill="#ffffff"/>
+          <rect x="352" y="464" width="296" height="128" rx="6" fill="#ffffff" stroke="#1c1f1e" stroke-width="1"/>
+          <rect x="592" y="476" width="44" height="16" rx="2" fill="none" stroke="#1c1f1e" stroke-opacity="0.16" stroke-width="0.8"/>
+          <text class="tag" x="598" y="487">SCORE</text>
+          <text class="nm" x="364" y="489">Official metric, three grids</text>
+          <text class="dt" x="364" y="505">Every decoder setting; then every dead-ball</text>
+          <text class="dt" x="364" y="519">setting, and every phase setting, on every</text>
+          <text class="dt" x="364" y="533">match in the four ×¼ scenarios, at the</text>
+          <text class="dt" x="364" y="547">first-touch truth</text>
+          <text class="src" x="364" y="565">banc/model_camp_girat.py:427</text>
+          <text class="src" x="364" y="579">banc/model_girat_fases.py:340, 343</text>
+          </g>
+          <g id="b-tria">
+          <rect x="24" y="624" width="296" height="112" rx="6" fill="#ffffff"/>
+          <rect x="24" y="624" width="296" height="112" rx="6" fill="#bf4520" fill-opacity="0.07" stroke="#bf4520" stroke-width="1.2"/>
+          <rect x="260" y="636" width="48" height="16" rx="2" fill="none" stroke="#bf4520" stroke-width="0.8"/>
+          <text class="tag tag-accent" x="266" y="647">CHOOSE</text>
+          <text class="nm" x="36" y="649">Each match&#x27;s settings</text>
+          <text class="dt" x="36" y="665">Chosen on the other nine: the best mean</text>
+          <text class="dt" x="36" y="679">spellF1 over the four ×¼ scenarios, and over</text>
+          <text class="dt" x="36" y="693">the good, medium and bad Smart Tagging</text>
+          <text class="src" x="36" y="711">banc/model_camp_girat.py:430</text>
+          <text class="src" x="36" y="725">banc/model_girat_fases.py:341, 345</text>
+          </g>
+          <g id="b-resultats">
+          <rect x="24" y="768" width="296" height="100" rx="6" fill="#ffffff"/>
+          <rect x="24" y="768" width="296" height="100" rx="6" fill="#ffffff" stroke="#1c1f1e" stroke-width="1"/>
+          <rect x="252" y="780" width="56" height="16" rx="2" fill="none" stroke="#1c1f1e" stroke-opacity="0.16" stroke-width="0.8"/>
+          <text class="tag" x="258" y="791">RESULTS</text>
+          <text class="nm" x="36" y="793">The bench results</text>
+          <text class="dt" x="36" y="809">Each match scored with its own settings, the</text>
+          <text class="dt" x="36" y="823">medium level and the test seeds, and the</text>
+          <text class="dt" x="36" y="837">baselines: the tables of §1</text>
+          <text class="src" x="36" y="855">banc/resum_girat.py:259-285</text>
+          </g>
+          <g id="b-final">
+          <rect x="352" y="768" width="296" height="84" rx="6" fill="#ffffff"/>
+          <rect x="352" y="768" width="296" height="84" rx="6" fill="#1c1f1e" fill-opacity="0.04" stroke="#4b5351" stroke-width="1"/>
+          <rect x="588" y="780" width="48" height="16" rx="2" fill="none" stroke="#1c1f1e" stroke-opacity="0.16" stroke-width="0.8"/>
+          <text class="tag" x="594" y="791">STORED</text>
+          <text class="nm" x="364" y="793">The pipeline&#x27;s model</text>
+          <text class="dt" x="364" y="809">Trained the same way on all ten matches,</text>
+          <text class="dt" x="364" y="823">with the settings that all ten choose</text>
+          <text class="src" x="364" y="841">banc/model_final_girat.py:145-160</text>
+          </g>
+      </svg>
